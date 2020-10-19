@@ -1,13 +1,13 @@
-import Flashcard from "../models/flashcard";
+import Flashcard from '../models/flashcard';
 
-export const resolvers = {
+const resolvers = {
   Query: {
     async getFlashcard(root, { _id }) {
       return await Flashcard.findById(_id);
     },
     async allFlashcards() {
       return await Flashcard.find();
-    }
+    },
   },
   Mutation: {
     async createFlashcard(root, { input }) {
@@ -18,6 +18,8 @@ export const resolvers = {
     },
     async deleteFlashcard(root, { _id }) {
       return await Flashcard.findOneAndRemove({ _id });
-    }
-  }
+    },
+  },
 };
+
+export default resolvers;

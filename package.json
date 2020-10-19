@@ -11,16 +11,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server-express": "^2.18.1",
+    "apollo-server-express": "^2.18.2",
     "graphql": "^15.3.0",
-    "mongoose": "^5.10.7",
-    "nodemon": "^2.0.4"
+    "mongoose": "^5.10.9",
+    "nodemon": "^2.0.5"
   },
   "devDependencies": {
-    "@babel/cli": "^7.11.6",
-    "@babel/core": "^7.11.6",
-    "@babel/node": "^7.10.5",
-    "@babel/preset-env": "^7.11.5"
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1"
   },
   "babel": {
     "presets": [

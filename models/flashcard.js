@@ -1,18 +1,18 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const FlashcardSchema = new mongoose.Schema({
   question: {
     type: String,
-    required: true
+    required: true,
   },
   answer: {
     type: String,
-    required: true
+    required: true,
   },
   isAnswered: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 });
 
-export default mongoose.model("flashcard", FlashcardSchema);
+export default mongoose.model('flashcard', FlashcardSchema);

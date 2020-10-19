@@ -1,6 +1,6 @@
 import { gql } from 'apollo-server-express';
 
-export const typeDefs = gql`
+const typeDefs = gql`
   type Flashcard {
     _id: ID!
     question: String!
@@ -30,3 +30,5 @@ export const typeDefs = gql`
     deleteFlashcard(_id: ID!) : Flashcard
   }
 `;
+
+export default typeDefs;
